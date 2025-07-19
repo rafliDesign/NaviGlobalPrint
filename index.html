@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navi Global Print – Cetak Kualitas Premium, Harga Terjangkau!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navi-blue': '#0056A7',
+                        'navi-light': '#3A86FF',
+                        'navi-accent': '#FFBE0B',
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'fadeIn': 'fadeIn 1s ease-in-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 86, 167, 0.8), rgba(0, 86, 167, 0.8)), url('https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .animate-delay-100 {
+            animation-delay: 0.1s;
+        }
+        
+        .animate-delay-200 {
+            animation-delay: 0.2s;
+        }
+        
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+        }
+        
+        .animate-delay-400 {
+            animation-delay: 0.4s;
+        }
+        
+        .animate-delay-500 {
+            animation-delay: 0.5s;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281234567890" target="_blank" class="fixed bottom-6 right-6 z-50 animate-float">
+        <div class="bg-green-500 text-white rounded-full p-4 shadow-xl flex items-center">
+            <i class="fab fa-whatsapp text-2xl mr-2"></i>
+            <span class="hidden md:inline-block font-medium">Chat WhatsApp Kami! 💬</span>
+        </div>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50x50" alt="Navi Global Print Logo" class="h-10 mr-3">
+                <span class="text-xl font-bold text-navi-blue">Navi Global Print</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-navi-blue font-medium hover:text-navi-accent transition">Home</a>
+                <a href="#features" class="text-gray-600 font-medium hover:text-navi-accent transition">Fitur</a>
+                <a href="#testimonials" class="text-gray-600 font-medium hover:text-navi-accent transition">Testimoni</a>
+                <a href="#offer" class="text-gray-600 font-medium hover:text-navi-accent transition">Promo</a>
+                <a href="#contact" class="text-gray-600 font-medium hover:text-navi-accent transition">Kontak</a>
+            </div>
+            <button class="md:hidden text-navi-blue">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 md:py-32 animate-fadeIn">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">Custom Apparel Berkualitas, Cetak Cepat & Free Konsultasi! ✨</h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90">Dari 10 hingga 10.000 pcs, kami siap penuhi kebutuhan konveksi Anda dengan hasil cetak tajam & tahan lama!</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#offer" class="bg-navi-accent hover:bg-yellow-600 text-navi-blue font-bold py-3 px-6 rounded-full text-center transition duration-300 transform hover:scale-105">Pesan Sekarang – Diskon 15% untuk Order Hari Ini!</a>
+                    <a href="#features" class="bg-transparent hover:bg-white hover:text-navi-blue text-white font-medium py-3 px-6 border-2 border-white rounded-full text-center transition duration-300">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sample Produk" class="rounded-lg shadow-2xl max-w-md w-full border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Point Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-navi-blue mb-6">Struktur Sablon Mudah Retak? Hasil Cetak Kurang Tajam? <span class="text-navi-accent">Kami Solusinya!</span></h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">Dengan teknologi cetak DTF terbaru dan bahan premium, kami menjamin hasil cetak yang tajam, tahan lama, dan tidak mudah retak meskipun setelah dicuci berkali-kali.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-navi-blue mb-12">Mengapa Memilih Navi Global Print?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md feature-card transition duration-300 animate-fadeIn animate-delay-100">
+                    <div class="text-navi-accent text-4xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navi-blue mb-2">Produksi Cepat (3-5 Hari)</h3>
+                    <p class="text-gray-600">Proses produksi efisien dengan mesin berteknologi tinggi untuk pengiriman tepat waktu.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md feature-card transition duration-300 animate-fadeIn animate-delay-200">
+                    <div class="text-navi-accent text-4xl mb-4">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navi-blue mb-2">Bahan Premium (Cotton Combed 30s)</h3>
+                    <p class="text-gray-600">Menggunakan bahan berkualitas tinggi untuk kenyamanan maksimal dan hasil cetak optimal.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md feature-card transition duration-300 animate-fadeIn animate-delay-300">
+                    <div class="text-navi-accent text-4xl mb-4">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navi-blue mb-2">Cetak DTF & Sablon Halus</h3>
+                    <p class="text-gray-600">Teknologi cetak Direct to Film untuk hasil yang tajam dan tahan lama.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md feature-card transition duration-300 animate-fadeIn animate-delay-400">
+                    <div class="text-navi-accent text-4xl mb-4">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navi-blue mb-2">Gratis Ongkir (Min. Order 50pcs)</h3>
+                    <p class="text-gray-600">Pengiriman gratis ke seluruh Indonesia untuk order minimal 50 pcs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-navi-blue">100%</div>
+                    <div class="text-gray-600">Uang Kembali</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-navi-blue">500+</div>
+                    <div class="text-gray-600">Klien Puas</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-navi-blue">10.000+</div>
+                    <div class="text-gray-600">Produk Terkirim</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-navi-blue">24/7</div>
+                    <div class="text-gray-600">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gradient-to-b from-navi-blue to-navi-light text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Apa Kata Klien Kami?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm testimonial-card animate-fadeIn animate-delay-100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Testimonial" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Wijaya</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-white text-opacity-90">"Hasil cetaknya sangat tajam dan bahan kaosnya nyaman dipakai. Prosesnya cepat dan harganya terjangkau. Recommended banget!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm testimonial-card animate-fadeIn animate-delay-200">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Testimonial" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Budi Santoso</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-white text-opacity-90">"Order 200 pcs untuk event perusahaan, selesai dalam 4 hari. Kualitasnya melebihi ekspektasi. Pelayanannya juga ramah dan responsif."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm testimonial-card animate-fadeIn animate-delay-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Testimonial" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Dewi Anggraeni</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-white text-opacity-90">"Sudah 3 kali order di Navi Global Print untuk brand fashion saya. Konsisten kualitasnya dan tidak pernah mengecewakan."</p>
+                </div>
+            </div>
+            
+            <!-- Client Logos -->
+            <div class="mt-16">
+                <h3 class="text-center text-xl font-medium mb-8">Klien yang Telah Mempercayai Kami</h3>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                    <img src="https://via.placeholder.com/120x60?text=Brand+1" alt="Client Logo" class="h-10 opacity-80 hover:opacity-100 transition">
+                    <img src="https://via.placeholder.com/120x60?text=Brand+2" alt="Client Logo" class="h-10 opacity-80 hover:opacity-100 transition">
+                    <img src="https://via.placeholder.com/120x60?text=Brand+3" alt="Client Logo" class="h-10 opacity-80 hover:opacity-100 transition">
+                    <img src="https://via.placeholder.com/120x60?text=Brand+4" alt="Client Logo" class="h-10 opacity-80 hover:opacity-100 transition">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Section -->
+    <section id="offer" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-gradient-to-r from-navi-blue to-navi-light text-white rounded-2xl p-8 md:p-12 shadow-xl">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">Promo Spesial Hari Ini!</h2>
+                        <p class="mb-6">Diskon 15% untuk semua produk + gratis ongkir untuk order minimal 50 pcs. Kuota produksi terbatas per hari – Book slot Anda sekarang!</p>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-medium mb-2">Promo Berakhir Dalam:</h3>
+                            <div id="countdown" class="flex gap-2 text-2xl font-bold">
+                                <div class="bg-white text-navi-blue px-4 py-2 rounded-lg"><span id="hours">24</span> <span class="text-sm">Jam</span></div>
+                                <div class="bg-white text-navi-blue px-4 py-2 rounded-lg"><span id="minutes">00</span> <span class="text-sm">Menit</span></div>
+                                <div class="bg-white text-navi-blue px-4 py-2 rounded-lg"><span id="seconds">00</span> <span class="text-sm">Detik</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg mb-6">
+                            <p class="font-medium">💡 Bonus tambahan 5% diskon untuk DP hari ini!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <div class="bg-white rounded-xl p-6 text-gray-800">
+                            <h3 class="text-xl font-bold text-navi-blue mb-4">Dapatkan Katalog & Harga Terbaru via WhatsApp!</h3>
+                            <form id="leadForm" class="space-y-4">
+                                <div>
+                                    <label for="name" class="block mb-1">Nama Lengkap</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navi-accent focus:border-navi-accent" required>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block mb-1">Nomor WhatsApp</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navi-accent focus:border-navi-accent" required>
+                                </div>
+                                <div>
+                                    <label for="product" class="block mb-1">Jenis Produk</label>
+                                    <select id="product" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navi-accent focus:border-navi-accent">
+                                        <option value="kaos">Kaos</option>
+                                        <option value="hoodie">Hoodie</option>
+                                        <option value="kemeja">Kemeja</option>
+                                        <option value="topi">Topi</option>
+                                        <option value="lainnya">Lainnya</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="w-full bg-navi-accent hover:bg-yellow-600 text-navi-blue font-bold py-3 px-6 rounded-lg transition duration-300">Kirim & Dapatkan Katalog</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-navi-blue mb-12">Produk Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Kaos Cotton Combed" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navi-blue mb-2">Kaos Cotton Combed 30s</h3>
+                        <p class="text-gray-600 mb-4">Bahan premium dengan hasil cetak tajam dan tahan lama.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-navi-blue">Rp 45.000</span>
+                            <span class="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">Diskon 15%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80" alt="Hoodie Premium" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navi-blue mb-2">Hoodie Premium</h3>
+                        <p class="text-gray-600 mb-4">Nyaman dipakai dengan bahan tebal dan hasil cetak yang presisi.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-navi-blue">Rp 120.000</span>
+                            <span class="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">Diskon 15%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736ad6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1325&q=80" alt="Kemeja Katun" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navi-blue mb-2">Kemeja Katun</h3>
+                        <p class="text-gray-600 mb-4">Kualitas tinggi dengan desain yang elegan dan profesional.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-navi-blue">Rp 85.000</span>
+                            <span class="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">Diskon 15%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#offer" class="inline-block bg-navi-blue hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full transition duration-300">Lihat Semua Produk & Promo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scarcity Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-3xl mx-auto bg-red-50 border-l-4 border-red-500 p-4 mb-8">
+                <h3 class="text-xl font-bold text-red-600">⚠️ Kuota Produksi Terbatas per Hari</h3>
+                <p class="text-gray-700">Kami hanya menerima 5 order besar per hari untuk menjaga kualitas produksi. Segera pesan sebelum kehabisan slot!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-navi-blue mb-12">Pertanyaan yang Sering Diajukan</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left">
+                        <h3 class="text-lg font-bold text-navi-blue">Berapa lama waktu produksi?</h3>
+                        <i class="fas fa-chevron-down text-navi-accent"></i>
+                    </button>
+                    <div class="faq-content mt-3 text-gray-600 hidden">
+                        <p>Waktu produksi standar kami adalah 3-5 hari kerja tergantung jumlah order dan kompleksitas desain. Untuk order besar di atas 500 pcs, mohon konfirmasi terlebih dahulu untuk estimasi waktu yang lebih akurat.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left">
+                        <h3 class="text-lg font-bold text-navi-blue">Apa perbedaan cetak DTF dengan sablon biasa?</h3>
+                        <i class="fas fa-chevron-down text-navi-accent"></i>
+                    </button>
+                    <div class="faq-content mt-3 text-gray-600 hidden">
+                        <p>Cetak DTF (Direct to Film) menghasilkan detail yang lebih tajam, warna yang lebih hidup, dan hasil cetak yang lebih tahan lama dibanding sablon biasa. Teknologi ini juga memungkinkan pencetakan desain full color dengan gradasi yang halus.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left">
+                        <h3 class="text-lg font-bold text-navi-blue">Apakah ada minimal order?</h3>
+                        <i class="fas fa-chevron-down text-navi-accent"></i>
+                    </button>
+                    <div class="faq-content mt-3 text-gray-600 hidden">
+                        <p>Kami menerima order mulai dari 10 pcs untuk kaos polos dengan desain yang sama. Untuk mendapatkan harga terbaik, kami sarankan order minimal 50 pcs.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left">
+                        <h3 class="text-lg font-bold text-navi-blue">Bagaimana cara pemesanan?</h3>
+                        <i class="fas fa-chevron-down text-navi-accent"></i>
+                    </button>
+                    <div class="faq-content mt-3 text-gray-600 hidden">
+                        <p>Anda bisa langsung menghubungi kami via WhatsApp atau mengisi form pemesanan di website. Kami akan memandu Anda melalui proses pemesanan mulai dari pemilihan bahan, desain, hingga pembayaran.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-navi-blue text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Siap Memulai Proyek Konveksi Anda?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Dapatkan kualitas cetak premium dengan harga terjangkau. Konsultasi gratis dengan tim kami sekarang!</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/6281234567890" target="_blank" class="bg-navi-accent hover:bg-yellow-600 text-navi-blue font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> Chat via WhatsApp
+                </a>
+                <a href="tel:+6281234567890" class="bg-white hover:bg-gray-100 text-navi-blue font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center justify-center">
+                    <i class="fas fa-phone-alt mr-2"></i> Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navi Global Print</h3>
+                    <p class="text-gray-400">Spesialis konveksi dan cetak apparel berkualitas dengan teknologi terbaru untuk hasil yang maksimal.</p>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-navi-accent"></i>
+                            <span class="text-gray-400">Jl. Industri Raya No. 123, Jakarta</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-navi-accent"></i>
+                            <span class="text-gray-400">0812-3456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-navi-accent"></i>
+                            <span class="text-gray-400">info@naviglobalprint.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Hours -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Jam Operasional</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex justify-between">
+                            <span>Senin - Jumat</span>
+                            <span>08:00 - 17:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sabtu</span>
+                            <span>09:00 - 15:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Minggu</span>
+                            <span>Tutup</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Social -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Ikuti Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-red-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2023 Navi Global Print. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const tomorrow = new Date();
+            tomorrow.setDate(now.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            
+            const diff = tomorrow - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // FAQ Toggle
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+        
+        // Form Submission
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const product = document.getElementById('product').value;
+            
+            // Here you would normally send this data to your server
+            // For demo, we'll just open WhatsApp with the message
+            const whatsappMessage = `Halo Navi Global Print, saya ${name} ingin mendapatkan katalog dan harga untuk produk ${product}. Nomor WhatsApp saya: ${phone}`;
+            const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(whatsappMessage)}`;
+            
+            window.open(whatsappUrl, '_blank');
+        });
+        
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.animate-on-scroll').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
